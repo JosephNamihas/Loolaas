@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', loadLogs);
 
+var currentTime = 0;
+
         function addLog() {
             const logTime = document.getElementById('logTime').value; // Creates a variable called logtime, which is assigned to the logTime element in the HTML - <input type="datetime-local" id="logTime" required>
             const logStatus = document.getElementById('logStatus').value; // 
@@ -38,4 +40,14 @@ document.addEventListener('DOMContentLoaded', loadLogs);
                 `;
                 logList.appendChild(logItem);
             });
+        }
+
+        function clearLogs() {
+            localStorage.clear();
+            location.reload();
+        }
+
+        function setTime() {
+            currentTime = new Date();
+            logTime.Date = currentTime;
         }
