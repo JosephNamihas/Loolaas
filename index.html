@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lula's</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Isla Loolaa's Sleep Tracker</h1>
+        <form class="log-form" id="logForm">
+            <input type="datetime-local" id="logTime" required>
+            <select id="logStatus" required>
+                <option value="sleeping">Sleeping</option>
+                <option value="awake">Awake</option>
+            </select>
+            <button type="button" onclick="addLog()">Add Log</button>
+        </form>
+        <ul class="logs" id="logList"></ul>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
