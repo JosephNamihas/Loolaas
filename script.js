@@ -47,7 +47,3 @@ var currentTime = 0;
             location.reload();
         }
 
-        function setTime() {
-            currentTime = new Date();
-            logTime.Date = currentTime;
-        }
